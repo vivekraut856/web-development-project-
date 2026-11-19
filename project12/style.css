@@ -1,0 +1,29 @@
+
+body {
+    font-family: Arial;
+    background: grey;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.project {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.project h2 {
+    color: blue;
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
